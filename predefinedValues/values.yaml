@@ -1,0 +1,32 @@
+bootstrap:
+  kafka:
+    replicas: 1
+db:
+  cluster:
+    host: "prereqs-postgres"
+    username:
+      value: "corda"
+    password:
+      valueFrom:
+        secretKeyRef:
+          name: "prereqs-postgres"
+          key: "corda-password"
+kafka:
+  bootstrapServers: "prereqs-kafka:9092"
+  sasl:
+    enabled: true
+    mechanism: "PLAIN"
+    username:
+      value: "admin"
+    password:
+      valueFrom:
+        secretKeyRef:
+          name: "prereqs-kafka"
+          key: "admin-password"
+  tls:
+    enabled: true
+    truststore:
+      valueFrom:
+        secretKeyRef:
+          name: "prereqs-kafka"
+          key: "ca.crt"

@@ -1,0 +1,9 @@
+openssl req -x509 -newkey rsa:4096 -keyout ca.key -out ca.crt -days 365
+PEMPASS
+Country Name (2 letter code) [AU]:PT
+State or Province Name (full name) [Some-State]:PORTO
+Locality Name (eg, city) []:PORTO
+Organization Name (eg, company) [Internet Widgits Pty Ltd]:UFP
+Organizational Unit Name (eg, section) []:MES
+Common Name (e.g. server FQDN or YOUR name) []:RUBEN
+Email Address []:

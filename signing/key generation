@@ -1,0 +1,9 @@
+keytool -genkeypair -alias RP -keyalg RSA -keysize 2048 -keystore Keystore.jks
+RP2024KeyGen
+Ruben Pinto
+UFP
+UFP
+Porto
+Porto
+PT
+CN=Ruben Pinto, OU=UFP, O=UFP, L="Porto ", ST=Porto, C=PT
