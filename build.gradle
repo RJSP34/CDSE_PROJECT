@@ -24,8 +24,8 @@ allprojects {
         r3RootCertFile = "config/r3-ca-key.pem"
         corDappCpiName = "MyCorDapp"
         notaryCpiName = "NotaryServer"
-        cordaRpcUser = "admin"
-        cordaRpcPasswd ="No2K6SCp84as"
+        cordaRpcUser = ""
+        cordaRpcPasswd =""
         workflowsModuleName = workflowsModule
         csdeWorkspaceDir = "workspace"
         notaryVersion = cordaNotaryPluginsVersion
